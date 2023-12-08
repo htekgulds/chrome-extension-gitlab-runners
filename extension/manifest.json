@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Gitlab Runners",
+    "description": "Show runners on Gitlab project page",
+    "version": "dev",
+    "icons": {
+      "90": "icons/icon.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "host_permissions": [
+      "*://git.hmb.gov.tr/*"
+    ],
+    "content_scripts": [
+      {
+        "js": ["./content.js"],
+        "matches": ["*://git.hmb.gov.tr/*"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  

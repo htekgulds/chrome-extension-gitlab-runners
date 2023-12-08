@@ -1,0 +1,3 @@
+node_modules
+extension/content.js
+*.tar.gz

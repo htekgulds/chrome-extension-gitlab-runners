@@ -1,0 +1,25 @@
+{
+  "name": "chrome-extension-gitlab-runners",
+  "version": "0.1.1",
+  "description": "Gitlab Runners Chrome Extension",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --outfile=extension/content.js --minify",
+    "watch": "npm run build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributors": [
+    "Hasan Tekgül <hasan.tekgul@hmb.gov.tr>",
+    "Murat Çuhadar <murat.cuhadar@hmb.gov.tr>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.8",
+    "fs-extra": "^11.2.0",
+    "standard": "^17.1.0",
+    "targz": "^1.0.1"
+  }
+}
