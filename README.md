@@ -14,3 +14,7 @@ Now when you visit a Gitlab project page you will see a new button appear. Click
 The extension works by extracting the `tags` fields used in that file and searching those tags with the Gitlab Runner API.
 
 Enjoy!
+
+# Credits
+
+Thanks [Codestar](https://github.com/Codestar) for coming up with the idea and providing a prototype that i built upon
