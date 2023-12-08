@@ -18,7 +18,10 @@ btn.querySelector('button.btn').addEventListener('click', async () => {
   if (clicked) return false
 
   clicked = true
-  const projectPath = window.location.pathname.substring(0, window.location.pathname.indexOf('/-/')).substring(1)
+  const dirPart = window.location.pathname.indexOf('/-/')
+  const projectPath = (
+    dirPart !== -1 ? window.location.pathname.substring(0, dirPart) : window.location.pathname
+  ).substring(1)
   const project = await getGitlabProject(projectPath)
   const yaml = await getYamlFileContent({ projectId: project.id, path: '.gitlab-ci.yml', branch: 'HEAD' })
   const stages = Object.keys(yaml).filter(field => !['variables', 'include', 'stages'].includes(field))
