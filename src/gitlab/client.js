@@ -1,5 +1,5 @@
 export default {
   get (url) {
-    return fetch('/api/v4' + url, { credentials: 'include' })
+    return fetch(`${window.location.origin}/api/v4${url}`, { credentials: 'include' })
   }
 }
