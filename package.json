@@ -4,7 +4,7 @@
   "description": "Gitlab Runners Chrome Extension",
   "main": "src/index.js",
   "scripts": {
-    "build": "esbuild src/index.js --bundle --outfile=extension/content.js --minify",
+    "build": "esbuild src/index.js --bundle --outfile=extensions/common/content.js --minify",
     "watch": "npm run build -- --watch",
     "package": "npm run build && node package.js",
     "test": "echo \"Error: no test specified\" && exit 1"
