@@ -5,9 +5,9 @@ This is a Chrome extension that you can use with gitlab.com or on-premise Gitlab
 # Installation
 
 1. Clone the repository
-2. Run `npm run package`. This will create the extension package as `extension.tar.gz`
-3. Decompress the package in a suitable folder.
-4. Install on Chrome extensions page using "Load unpacked" button.
+2. Run `npm run package`. This will create the extension packages as `extension-chrome.tar.gz` and `extension-firefox.tar.gz`
+3. Decompress the package you want in a suitable folder.
+4. Install on Extensions page using "Load unpacked" button.
 
 Now when you visit a Gitlab project page you will see a new button appear. Click the button and you will see a list of runners that the project uses in its `.gitlab-ci.yml` file.
 
